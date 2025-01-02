@@ -82,5 +82,4 @@ Example (RNN with GloVe):
 
 # Conclusion
 Using pre-trained word embeddings significantly improves the performance of RNN-based architectures for sentiment analysis.
-This demonstrates the importance of feature representation
-# in natural language processing tasks.
+This demonstrates the importance of feature representation in natural language processing tasks.
