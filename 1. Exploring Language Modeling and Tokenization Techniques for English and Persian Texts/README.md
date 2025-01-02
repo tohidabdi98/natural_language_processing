@@ -11,7 +11,7 @@ This notebook explores the concepts of language modeling and tokenization, focus
 ---
 
 ## Notebook Highlights
-### Question 1: Language Modeling
+### Part 1: Language Modeling
 - **Preprocessing Persian Text:**
   - Normalization with `hazm.Normalizer`.
   - Sentence segmentation and tokenization.
@@ -23,7 +23,7 @@ This notebook explores the concepts of language modeling and tokenization, focus
   - Analyze the trade-offs between 2-gram, 3-gram, and 5-gram models.
   - Measure perplexity to compare sentence generation probabilities.
 
-### Question 2: Tokenization
+### Part 2: Tokenization
 - **Tokenization Methods:**
   - White-space tokenization.
   - Tokenization using `spaCy` and BPE.
@@ -38,3 +38,25 @@ This notebook explores the concepts of language modeling and tokenization, focus
 
 ## How to Use
 1. Install the required libraries:
+pip install hazm nltk spacy tokenizers tabulate python -m spacy download en_core_web_sm
+
+2. Prepare the dataset:
+- Include `hp_en.txt` and `hp_fa.txt` in the same directory as this notebook.
+3. Execute the notebook cells sequentially.
+
+---
+
+## Results and Observations
+- N-gram models reveal word dependencies but show limitations with small vocabulary sizes.
+- BPE tokenization efficiently handles out-of-vocabulary words and performs well in Persian.
+- The trade-offs between accuracy and computational cost vary across tokenization methods.
+
+---
+
+## Acknowledgments
+This notebook uses:
+- `hazm` for Persian text processing.
+- `nltk` for n-gram modeling and language processing.
+- `spaCy` and `ByteLevelBPETokenizer` for tokenization comparisons.
+
+Feel free to modify and expand this notebook for further experimentation!
